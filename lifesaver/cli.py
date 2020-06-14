@@ -19,7 +19,9 @@ def resolve_class(specifier: str):
 
 
 @click.command()
-@click.option("--config", default="config.yml", help="The configuration file to use.")
+@click.option(
+    "-c", "--config", default="config.yml", help="The configuration file to use."
+)
 @click.option(
     "--no-default-cogs",
     is_flag=True,
